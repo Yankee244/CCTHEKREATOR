@@ -3,7 +3,6 @@ import { TrendingUp, BookOpen, Star, DollarSign } from 'lucide-react';
 import { EBOOK_TITLE, EBOOK_SUBTITLE, EBOOK_IMAGE, SELAR_LINK } from '../constants';
 import FloatingCard from './FloatingCard';
 
-// ...existing code...
 const Hero: React.FC = () => {
   return (
     <section className="relative pt-32 pb-20 px-6 overflow-hidden bg-dots">
@@ -33,99 +32,21 @@ const Hero: React.FC = () => {
             <img 
               src={EBOOK_IMAGE} 
               alt="Positioning for Foreign Clients Book Cover" 
-              className="w-full max-w-[320px] sm:max-w-[400px] rounded-lg shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] border-4 border-white mb-6 mx-auto"/>
+              className="w-full max-w-[320px] sm:max-w-[400px] rounded-lg shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] border-4 border-white mb-6"/>
 
-            {/* CTAs - responsive, full-width on small screens */}
-            <div className="flex flex-col sm:flex-row items-center gap-4 mb-8 w-full max-w-[420px] mx-auto px-4">
+            {/* CTAs */}
+            <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4 mb-20">
               <a 
                 href={SELAR_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto px-6 sm:px-10 py-3 sm:py-5 bg-black text-white rounded-full font-bold text-sm sm:text-lg hover:bg-neutral-900 transition-all shadow-xl active:scale-95 whitespace-normal text-center"
+                className="w-full sm:w-auto px-10 py-5 bg-black text-white rounded-full font-bold text-lg hover:bg-neutral-900 transition-all shadow-xl active:scale-95"
               >
                 Get the book now
               </a>
             </div>
 
-            {/* Floating Cards - MOBILE: stacked centered */}
-            <div className="w-full max-w-md mx-auto flex flex-col items-center gap-4 md:hidden mt-2">
-              <FloatingCard className="w-full" delay={0}>
-                <div className="flex items-center space-x-3 mb-2">
-                  <div className="p-2 bg-black/5 rounded-lg text-black">
-                    <TrendingUp size={18} />
-                  </div>
-                  <span className="font-bold text-slate-800">Growth Mastery</span>
-                </div>
-                <p className="text-xs text-slate-500 leading-normal">Learn the exact metrics used by industry leaders to track success.</p>
-              </FloatingCard>
-
-              <FloatingCard className="w-full" delay={1.5}>
-                <div className="flex items-center space-x-3 mb-2">
-                  <div className="p-2 bg-black/5 rounded-lg text-black">
-                    <BookOpen size={18} />
-                  </div>
-                  <span className="font-bold text-slate-800 text-sm">Chapter 4: Scaling</span>
-                </div>
-                <div className="space-y-2">
-                  <div className="h-2 w-full bg-slate-100 rounded"></div>
-                  <div className="h-2 w-5/6 bg-slate-100 rounded"></div>
-                  <div className="h-2 w-2/3 bg-slate-100 rounded"></div>
-                </div>
-              </FloatingCard>
-
-              <FloatingCard className="w-full" delay={3}>
-                <div className="flex items-center space-x-3">
-                  <div className="p-3 bg-amber-100 rounded-full text-amber-600">
-                    <DollarSign size={24} />
-                  </div>
-                  <div>
-                    <div className="text-sm font-bold text-slate-800">Revenue</div>
-                    <div className="text-xl font-black text-slate-900">+240%</div>
-                  </div>
-                </div>
-              </FloatingCard>
-            </div>
-
-            {/* Floating Cards - DESKTOP: positioned around mockup */}
-            <div className="relative w-full max-w-5xl h-[300px] hidden md:block">
-              {/* Card 1: Benefit */}
-              <FloatingCard className="absolute -top-10 left-1/2 -translate-x-1/2 md:left-0 md:translate-x-0 md:w-64 w-48" delay={0}>
-                <div className="flex items-center space-x-3 mb-2">
-                  <div className="p-2 bg-black/5 rounded-lg text-black">
-                    <TrendingUp size={18} />
-                  </div>
-                  <span className="font-bold text-slate-800">Growth Mastery</span>
-                </div>
-                <p className="text-xs text-slate-500 leading-normal">Learn the exact metrics used by industry leaders to track success.</p>
-              </FloatingCard>
-
-              {/* Card 2: Chapter Preview */}
-              <FloatingCard className="absolute top-20 right-1/2 translate-x-1/2 md:right-0 md:translate-x-0 md:w-72 w-60" delay={1.5}>
-                <div className="flex items-center space-x-3 mb-2">
-                  <div className="p-2 bg-black/5 rounded-lg text-black">
-                    <BookOpen size={18} />
-                  </div>
-                  <span className="font-bold text-slate-800 text-sm">Chapter 4: Scaling</span>
-                </div>
-                <div className="space-y-2">
-                  <div className="h-2 w-full bg-slate-100 rounded"></div>
-                  <div className="h-2 w-5/6 bg-slate-100 rounded"></div>
-                  <div className="h-2 w-2/3 bg-slate-100 rounded"></div>
-                </div>
-              </FloatingCard>
-
-              {/* Card 3: Icon Box */}
-              <FloatingCard className="absolute -bottom-10 left-1/2 -translate-x-1/2 md:left-1/4 md:translate-x-0 md:w-52 w-48" delay={3}>
-                <div className="flex items-center space-x-3">
-                  <div className="p-3 bg-amber-100 rounded-full text-amber-600">
-                    <DollarSign size={24} />
-                  </div>
-                  <div>
-                    <div className="text-sm font-bold text-slate-800">Revenue</div>
-                    <div className="text-xl font-black text-slate-900">+240%</div>
-                  </div>
-                </div>
-              </FloatingCard>
+            
               
               {/* Central Logo Visual */}
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-white rounded-3xl shadow-2xl flex items-center justify-center border border-slate-50 overflow-hidden group">
@@ -146,4 +67,3 @@ const Hero: React.FC = () => {
 };
 
 export default Hero;
-// ...existing code...
