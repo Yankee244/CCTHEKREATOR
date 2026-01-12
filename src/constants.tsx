@@ -4,7 +4,7 @@ import type { NavItem, Feature, Testimonial, Audience } from './types';
 export const SELAR_LINK = "https://selar.com/13u931ra61"; // Placeholder
 export const BRAND_NAME = "";
 export const BRAND_LOGO = "/ceecee400x150.png"; 
-export const EBOOK_TITLE = `I Made Over 20,000 USD Working With Foreign Clients in 2025
+export const EBOOK_TITLE = `I Made Over 20,000 US Dollars Working With Foreign Clients in 2025
 (Over ₦30,000,000)`;
 export const EBOOK_SUBTITLE = `I did this as a graphic designer based in Nigeria without Upwork or Fiverr.
 I landed foreign clients using just X (formerly Twitter) and Instagram by positioning myself intentionally and showing up consistently. No chasing, no cold emails, just clarity, strategy, and patience.
@@ -113,4 +113,5 @@ export const TESTIMONIALS: Testimonial[] = [
     text: "I finished the book in one sitting. It answered questions I’ve had for years but couldn’t put into words. I now see why some people earn more with the same skills.This book is worth far more than the price.",
     avatar: "https://picsum.photos/seed/lena/100/100",
   },
+
 ];
