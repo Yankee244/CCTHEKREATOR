@@ -1,7 +1,6 @@
 import React from 'react';
-import { TrendingUp, BookOpen, Star, DollarSign } from 'lucide-react';
+import { Star } from 'lucide-react';
 import { EBOOK_TITLE, EBOOK_SUBTITLE, EBOOK_IMAGE, SELAR_LINK } from '../constants';
-import FloatingCard from './FloatingCard';
 
 const Hero: React.FC = () => {
   return (
@@ -44,16 +43,6 @@ const Hero: React.FC = () => {
               >
                 Get the book now
               </a>
-            </div>
-
-            
-              
-              {/* Central Logo Visual */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-white rounded-3xl shadow-2xl flex items-center justify-center border border-slate-50 overflow-hidden group">
-                <div className="w-20 h-20 bg-black rounded-2xl flex items-center justify-center transition-transform group-hover:scale-110 duration-500">
-                  <BookOpen size={40} color="white" />
-                </div>
-              </div>
             </div>
           </div>
         </div>
