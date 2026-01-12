@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Star } from 'lucide-react';
 import { TESTIMONIALS } from '../constants';
@@ -12,7 +11,7 @@ const Testimonials: React.FC = () => {
           <div className="flex items-center justify-center space-x-1 text-amber-400 mb-4">
             {[...Array(5)].map((_, i) => <Star key={i} fill="currentColor" size={24} />)}
           </div>
-          <p className="text-lg text-slate-600">Join 5,000+ people who have transformed their careers.</p>
+          <p className="text-lg text-slate-600">Join other freelancers who have transformed their careers.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
