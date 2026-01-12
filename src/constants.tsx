@@ -94,7 +94,7 @@ export const AUDIENCES: Audience[] = [
 ];
 
 
-export const TESTIMONIALS: Testimonial[] = [
+export const TESTIMONIALS: Testimonial[] = [ 
   {
     name: "Chinedu Okafor",
     role: "Product Designer",
@@ -102,7 +102,7 @@ export const TESTIMONIALS: Testimonial[] = [
     avatar: "https://picsum.photos/seed/sarah/100/100",
   },
   {
-    name: "Blessing O",
+    name: "Jessica O",
     role: "Digital Marketer",
     text: "This book came at the right time for me. I’ve been busy but not profitable, and your explanation made me realize why. I’ve already adjusted my approach and conversations with clients. God bless you for sharing this knowledge.",
     avatar: "https://picsum.photos/seed/marcus/100/100",
@@ -113,5 +113,4 @@ export const TESTIMONIALS: Testimonial[] = [
     text: "I finished the book in one sitting. It answered questions I’ve had for years but couldn’t put into words. I now see why some people earn more with the same skills.This book is worth far more than the price.",
     avatar: "https://picsum.photos/seed/lena/100/100",
   },
-
 ];
